@@ -8,3 +8,5 @@
 <h2 style="font-size:30px;">Data</h2>
 <p> AdventureWorks is a sample database for Microsoft SQL Server 2008 to 2014. This is a documentation of this database created with Dataedo.
 AdventureWorks database supports standard online transaction processing scenarios for a fictitious bicycle manufacturer - Adventure Works Cycles. Scenarios include Manufacturing, Sales, Purchasing, Product Management, Contact Management, and Human Resources. </p>
+<hr>
+<h2 style="font-size:30px;">Diagram</h2>
