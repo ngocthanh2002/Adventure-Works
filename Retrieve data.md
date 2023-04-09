@@ -212,7 +212,7 @@ select SalesOrderID
 Answer:
 
 
-*Some records in the database include missing or unknown values that are returned as NULL. You must create some queries that handle these NULL values appropriately.
+* Some records in the database include missing or unknown values that are returned as NULL. You must create some queries that handle these NULL values appropriately.
 Retrieve customer contact names with middle names if known
 You have been asked to write a query that returns a list of customer names. The list must consist of a single column in the format first last (for example Keith Harris) 
 if the middle name is unknown, or first middle last (for example Jane M. Gates) if a middle name is known
@@ -227,7 +227,7 @@ from [SalesLT].[Customer]
 
 Answer:
 
-*Retrieve primary contact details
+* Retrieve primary contact details
 Customers may provide Adventure Works with an email address, a phone number, or both.
 If an email address is available, then it should be used as the primary contact method; 
 if not, then the phone number should be used. You must write a query that returns a list of customer IDs in one column,
@@ -242,7 +242,7 @@ from [SalesLT].[Customer]
 
 ````
 
-*As you continue to work with the Adventure Works customer, product and sales data, 
+* As you continue to work with the Adventure Works customer, product and sales data, 
 you must create queries for reports that have been requested by the sales team.
 Retrieve a list of customers with no address
 A sales employee has noticed that Adventure Works does not have address information for all customers. 
@@ -260,7 +260,7 @@ where CustomerID not in (select distinct CustomerID from [SalesLT].[CustomerAddr
 
 ````
 
-*As an initial step towards generating the invoice report, write a query that returns the company name
+* As an initial step towards generating the invoice report, write a query that returns the company name
 
 ````sql
 
