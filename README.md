@@ -25,18 +25,18 @@ The logistics manager at Adventure Works has asked you to generate some reports 
 Initially, you need to produce a list of all of you customers' locations</p>
 <p>Retrieve the heaviest products information
 Transportation costs are increasing and you need to identify the heaviest products. Retrieve the names, weight of the top ten percent of products by weight.</p>
-<p>- Retrieve product data</p>
+<p>📑 Retrieve product data</p>
 <p> * Filter products by color and size for the production </p>
 <p> * Filter products by color, size and product number </p>
 <p> * Retrieve specific products by productID</p>
-<p> - Retrieve customer order data for the sales team </p>
+<p> 🙎 Retrieve customer order data for the sales team </p>
 <p> * Retrieve a list of customer companies</p>
 <p> * Retrieve a list of sales order revisions</p>
-<p> - Retrieve customer contact details  </p>
+<p> 🙎 Retrieve customer contact details  </p>
 <p> * Retrieve customer contact details followed by requirement of the sales team  </p>
 <p> * Retrieve primary contact details </p>
 <p> * Retrieve a list of customer with no address </p>
-<p> - Generate invoice reports fro the sales team</p>
+<p> 🙎 Generate invoice reports fro the sales team</p>
 <p> * Retrieve customer orders </p>
 <p> * Retrieve customer orders with address</p>
 <p> * Retrieve a list of products</p>
