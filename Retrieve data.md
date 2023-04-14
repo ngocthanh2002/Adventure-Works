@@ -10,6 +10,12 @@ from [SalesLT].[Address]
 ````
 Answer:
 
+<picture>
+  <img  src="https://user-images.githubusercontent.com/129776645/231954328-acdb2d80-c23d-4a57-a84d-8b9475a5cc0d.png">
+</picture>
+ 
+ 
+ <p>There are 269 cities in the database</p>
 
 * Number of State Province in database
 ````sql
@@ -18,6 +24,12 @@ from [SalesLT].[Address]
 ````
 
 Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231957248-6db02da3-f26c-45f2-8bc4-6c6d1a6f300e.png">
+</picture>
+ 
 Database have totally 25 StateProvinces 
 
 * Number of Country Region in database
@@ -27,6 +39,13 @@ from [SalesLT].[Address]
 ````
 
 Answer:
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231958746-0726c274-f860-4a47-9d94-f84c6098bda0.png">
+</picture>
+ 
+
+
 Database have 3 CountryRegions such as Cananda, United Kingdom, United States.
 
 * Number of Customer of each Country
@@ -51,10 +70,18 @@ from number_customer
 where number_customer = 1
 ````
 Answer: 
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231959371-be35c4bf-8a38-4aef-9fab-7846f778e338.png">
+</picture>
+ 
+
+
 Database have 107 ,38, 272 customers in Canada, United Kingdom, United States respectively.
 
 
-* Number of Customer of each Country
+* Number of Customer of each StateProvince
 ````sql
 with cus_country as (select cusad.CustomerID
     ,ad.AddressID
@@ -77,7 +104,14 @@ from number_customer
 where number_customer = 1
 ````
 
-Answer: 
+Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231960498-09d2227f-6d6e-40bd-93e7-19b9a756fb1c.png">
+</picture>
+
+
 
 * Retrieve the names, weight of the top ten percent of product by weight
 ````sql
@@ -90,6 +124,9 @@ order by [Weight] DESC
 ````
 Answer:
 
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231960750-c710b13b-e7ee-4f31-aeda-8f5c818a7622.png">
+</picture>
 
 
 <h1 style="font-size:20px;"> 🕴️The Production Manager</h1>
@@ -107,6 +144,10 @@ where (Color in ('Black','Red','White'))
 ````
 Answer: 
 
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231960976-4e4a76e5-107b-456f-a104-07d97c5ee77f.png">
+</picture>
 
 * Retrieve the ProductID, ProductNumber and Name of the products, that must have Product number begins with 'BK-' followed by any character other than 'T'  and ends with a '-' followed by any two numerals. 
 And satisfy one of the following conditions: color of black, red, or white , size is S or M
@@ -127,6 +168,10 @@ where ProductNumber like 'BK-%'
 ````
 Answer:
 
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231961792-ae0b7de0-9e63-40ac-80e2-6652d6f8cff6.png">
+</picture>
+
 * Retrieve specific products by product ID  
 Retrieve the product ID, product number, name, and list price of products whose 
  product name contains "HL " or "Mountain", 
@@ -143,6 +188,9 @@ WHERE
 ````
 Answer:
 
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231961933-b2d942a4-dede-4bae-9341-bc75a86ebfac.png">
+</picture>
 
 * Color Product
 ````sql
@@ -152,6 +200,10 @@ from [SalesLT].[Product]
 
 Answer:
 
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231962152-4e3ec583-488c-477b-96cb-ceb729aae567.png">
+</picture>
+
 * Size Product
 ````sql
 select distinct Size
@@ -159,6 +211,11 @@ from [SalesLT].[Product]
 ````
 
 Answer:
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231962232-67e91e2d-b152-4fb8-a084-fb09e063cac0.png">
+</picture>
+
 
 
 * Retrieve the heaviest products information
@@ -180,6 +237,14 @@ order by [Weight] desc
 
 Answer:
 
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231962483-d8bde8bb-1d33-4caa-9a90-37bbc6c6ec74.png">
+</picture>
+
+
+
+
 As you continue to work with the Adventure Works customer data, you must create queries for reports that have been requested by the sales team.
 Retrieve a list of customer companies
 You have been asked to provide a list of all customer companies in the format Customer ID : Company Name - for example, 78: Preferred Bikes
@@ -193,6 +258,11 @@ from [SalesLT].[Customer]
 ````
 
 Answer:
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231962750-67e3362f-d4a1-4e1e-b68b-f1a7578a9eba.png">
+</picture>
+
 
 * Retrieve a list of sales order revisions
 The SalesLT.SalesOrderHeader table contains records of sales orders. You have been asked to retrieve data for a report that shows:
@@ -212,6 +282,11 @@ select SalesOrderID
 Answer:
 
 
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231963018-8489780e-e312-4fc0-8d8a-4f1998a55cad.png">
+</picture>
+
+
 * Some records in the database include missing or unknown values that are returned as NULL. You must create some queries that handle these NULL values appropriately.
 Retrieve customer contact names with middle names if known
 You have been asked to write a query that returns a list of customer names. The list must consist of a single column in the format first last (for example Keith Harris) 
@@ -225,7 +300,14 @@ select FirstName
 from [SalesLT].[Customer]
 ````
 
+
 Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231963235-9167f5a8-e49e-4122-9b8d-8b69a1f935c7.png">
+</picture>
+
 
 * Retrieve primary contact details
 Customers may provide Adventure Works with an email address, a phone number, or both.
@@ -241,6 +323,13 @@ select CustomerID
 from [SalesLT].[Customer]
 
 ````
+
+Answer:
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231963615-47ab8aa7-3218-40b6-b4bd-56f25bdc7966.png">
+</picture>
+
 
 * As you continue to work with the Adventure Works customer, product and sales data, 
 you must create queries for reports that have been requested by the sales team.
@@ -260,6 +349,15 @@ where CustomerID not in (select distinct CustomerID from [SalesLT].[CustomerAddr
 
 ````
 
+Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231964029-88500a12-031e-423d-b99f-771eea3cec26.png">
+</picture>
+
+
+
 * As an initial step towards generating the invoice report, write a query that returns the company name
 
 ````sql
@@ -272,6 +370,13 @@ join [SalesLT].[SalesOrderHeader] as header
 on cus.CustomerID = header.CustomerID
 
 ````
+Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231964029-88500a12-031e-423d-b99f-771eea3cec26.png">
+</picture>
+
 
 *Retrieve customer orders with addresses
 Extend your customer orders query to include the Main Office address for each customer, 
@@ -296,6 +401,13 @@ inner join SalesLT.SalesOrderHeader as header
 where AddressType = 'Main Office'
 
 ````
+Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231964891-59bd3676-8baf-40fe-8524-9cf462cc3e9f.png">
+</picture>
+
 
 * Task 2: Retrieve customer data
 As you continue to work with the Adventure Works customer, product and sales data, 
@@ -332,6 +444,12 @@ where YEAR (SellStartDate) = 2006
 ````
 
 
+Answer:
+
+
+<picture>
+ <img src ="https://user-images.githubusercontent.com/129776645/231965281-86c26518-574a-4f0f-98cc-87b2f4a44ef1.png">
+</picture>
 
 
 
